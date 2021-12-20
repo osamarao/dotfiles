@@ -110,7 +110,7 @@ alias fix='git diff --name-only | uniq | xargs code'
 alias push_pr='git push origin HEAD 2>&1 | grep -o "https://[a-z./A-Z\-]*[\?]*sourceBranch.*" | xargs open -a "Firefox"'
 alias cls='clear'
 alias git_clean='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
-alias alias gcu='git branch --merged | egrep -v "(^\\*|master|develop)" | xargs git branch -d && git remote prune origin'
+alias gcu='git branch --merged | egrep -v "(^\\*|master|develop)" | xargs git branch -d && git remote prune origin'
 export ANDROID_HOME=/User/$USERexport ANDROID_HOME=/Users/$USER/Library/Android/sdk
 
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
